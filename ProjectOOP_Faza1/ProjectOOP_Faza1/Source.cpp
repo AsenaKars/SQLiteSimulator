@@ -1164,9 +1164,8 @@ istream& operator>>(istream& in, Database& db) {
 	return in;
 }
 
-
-//int main()
-//{
+int main()
+{
 //	string userInput;
 //	getline(cin, userInput);
 //
@@ -1233,4 +1232,4 @@ istream& operator>>(istream& in, Database& db) {
 //	//cout << c; //test op citire
 //
 //	return 0;
-//}
+}
