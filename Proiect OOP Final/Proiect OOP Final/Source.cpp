@@ -13,7 +13,7 @@ using namespace std;
 //else => return values bigger than 2, or throws exceptions
 
 
-//clasa Exceptions - gestioneaza erori ...
+//clasa Exceptions - gestioneaza erori
 class other_exception : public exception {
 public:
 	other_exception() {
@@ -30,7 +30,6 @@ private:
 	string commandMenu[7] = { "CREATE", "DROP","DISPLAY","INSERT","DELETE","SELECT","UPDATE" };
 	string foundCommand = "";
 
-	//friend class Table;
 
 	//create
 	string numeTabel;
@@ -39,24 +38,23 @@ private:
 	string* tipColoane;
 	int* dimensiuneColoane;
 	string* valImplicitaColoane;
-	int index = 1;	//lungime!
+	int index = 1;	//lungime
 
 	//drop index
 	string numeIndex;
 
 	//insert
-	string* values;	 //vector de string uri alocat dinamic
+	string* values;	 
 	int indexValues = 0;
 
-	//TODO variab declarata dinamic (pointer)
 	string* packageDelete;
 
 	//select
 	string* packageSelect;
 
 	//update
-	string* packageUpdate; //vector de string uri alocat dinamic
-	string* packageWhere; //vector de string uri alocat dinamic
+	string* packageUpdate; 
+	string* packageWhere; 
 
 public:
 
